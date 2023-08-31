@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <form action="">
+            <p>
+                <label for="fruta">Qual sua fruta favorita:
+                    <abbr title="Este campo é obrigatorio">$</abbr>
+                </label>
+                <input type="text" id="txtfruta" name="fruta" required pattern="[Bb]anana| [Mm]açã | [Aa]cerola | [Ss]eriguela | [Ll]imão | [Uu]va">
+
+                <datalist id="li">
+                    <option value="">Banana</option>
+                    <option value="">Maça</option>
+                    <option value="">Acerola</option>
+                    <option value="">Seriguela</option>
+                </datalist>
+            </p>
+            <p>
+                <label for="txtEmail">Qual é o seu e-mail favorito:</label>
+                <input type="email" id="email" placeholder="email" name="email">
+            </p>
+            <input type="text" id="nome" placeholder="nome">
+            <input type="password" id="senha" placeholder="senha">
+
+            <button id="btnenviar">Enviar</button>
+        </form>
+    </div>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>

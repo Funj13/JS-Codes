@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+Escreva um programa que receba dois números digitados em campos de texto
+e exiba o menor número dentre eles em uma tag “h3”
+<br>
+<body>
+
+    <br>
+    <label>numero1</label>
+    <input type="number" id="numero1">
+    <br>
+    <label>numero2</label>
+    <input type="number" id="numero2">
+
+    <button onclick="verificaMaiorMenor()">Verificar</button>
+
+    <h3 id="resultado"></h3>
+
+
+    
+    <script>
+
+        function verificaMaiorMenor() {
+
+            let numero1 = document.getElementById("numero1").value;
+            let numero2 = document.getElementById("numero2").value;
+           
+            if (numero1 < numero2) {
+                document.getElementById("resultado").innerHTML= "numero1 menor do que numero2";
+            console.log("numero1 menor do que numero2");
+        
+    
+        }else{
+            document.getElementById("resultado").innerHTML= "numero1 maior do que numero2";
+            console.log("numero1 maior do que numero2");
+        }
+
+        }
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+body{
+margin: 0px;
+background-color: rgb(101, 251, 101);
+}
+div{
+    margin: 0;
+    justify-content: center;
+    display: flex;
+    background-color: green;
+    font-family: 'Times New Roman', Times, serif;
+        color: white;
+        font-size: 15px;
+}
+li{
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size: 60px;
+    margin: 100px; 
+    justify-content: center;
+   position: relative;
+   top: 200px;
+   right: 85px;
+   left:440px;
+  
+   
+}
+img{
+    height: 250px;
+    width: 250px;
+    margin: 50px; 
+   position: absolute;
+   top:50px;
+   left: 600px;
+    border-style:groove;
+}
+.id{
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   color: white;
+   font-size: 40px;
+   margin: 100px; 
+   justify-content: center;
+   position: relative;
+   top: 200px;
+   right: 85px;
+   left:265px;
+  
+}

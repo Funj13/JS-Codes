@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+Faça um programa que pergunte a temperatura em graus Fahrenheit e mostre
+a temperatura em graus Celsius.
+<br>
+<body>
+    <label>Digite a temperatura em Fahrenheit</label>
+    <input type="number" id="temp"><br>
+    <button onclick="calcularTemp()">Verificar Celsius</button>
+    <h3 id="resultado"></h3>
+    <script>
+        function calcularTemp() {
+
+            let tempF = parseFloat(document.getElementById("temp").value);
+
+            let tempC = (tempF - 32) / 1.8;
+
+            alert(tempC);
+
+        }
+    </script>
+</body>
+
+</html>

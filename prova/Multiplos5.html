@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+Escreva um programa que solicite ao usuário que digite um número, e exiba em
+uma tag html (“Multiplo de 3” ou “Não é multiplo de 3”) caso esse número seja
+multiplo de 3 ou não. Para saber se um número é múltiplo de 3, basta que o
+módulo da divisão seja zero (0).
+<br>
+<body>
+
+    <br>
+    <label for="multiplos">escreva um numero</label>
+    <input type="number" id="multiplos">
+    <button onclick="verificarmulnmul()">Verificar</button>
+
+    <h3 id="resultado"></h3>
+    <script> 
+
+
+        function verificarmulnmul(){
+
+            let numero = document.getElementById("multiplos").value;
+            if (numero % 3 == 0) {
+                
+            document.getElementById("resultado").innerHTML= "multiplo de 3";  
+                console.log("Multiplo de 3");
+            } else {
+                document.getElementById("resultado").innerHTML= "não é multiplo de 3";
+                console.log("não é multiplo de 3");
+                
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

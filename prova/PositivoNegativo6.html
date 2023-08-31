@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+. Faça um programa que verifique se um número é positivo, negativo ou igual a
+zero e mostre uma mensagem correspondente. 
+<br>
+<body>
+
+    <br>
+    <label>positivo, negativo, ou igual a 0:</label>
+    <input type="number" id="numero">
+    <button onclick="verificaMaiorMenorZero()">Verificar</button>
+    <h3 id="resultado"></h3>
+
+    
+    <script>
+
+        function verificaMaiorMenorZero() {
+
+            let numero = document.getElementById("numero").value;
+            
+            if (numero > 0) {
+                document.getElementById("resultado").innerHTML= "Positivo";
+                console.log("Positivo");
+            
+            } else if (numero < 0){
+                document.getElementById("resultado").innerHTML= "Negativo";
+                console.log("Negativo");
+            
+            }else{
+                document.getElementById("resultado").innerHTML= "Igual a zero";
+                console.log("Igual a Zero");
+            }
+
+
+        }
+</script>
+
+</body>
+
+</html>

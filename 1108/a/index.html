@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="id_h1" class="classe_h1">Mundo Magico do Javascript</h1>
+
+    <p id="corvinal" class="classe_p">Corrvinal</p>
+    <p id="grifinoria" class="classe_p">Grifinoria</p>
+    <p id="sonserina" class="classe_p">Sonserina</p>
+    <p id="lufalufa" class="classe_p">Lufa-Lufa</p>
+
+    <button type="button" id="btnContar">contar</button>
+    <button type="button" id="btnRemover">remover classes</button>
+    <br><br>
+    <p>Elemento a ser removido/deletado:</p>
+    <input type="text" id="txtElemento">
+    <button type="button" id="btnAdicionarElemento">adicionar</button>
+    <button type="button" id="btnRemoverElemento">remover elemento</button> 
+
+
+    <script>
+        var btnRemoverElemento = document.getElementById("btnRemoverElemento");
+        btnRemoverElemento.addEventListener("click", removerElemento);
+
+            function removerElemento(){
+                let idElemento= document.getElementById("txtElemento").value;
+                let elementoParaRemover = document.getElementById(idElemento);
+                elementoParaRemover.parentNode.removeChild(elementoParaRemover);
+            }
+
+            var btnAdicionarElemento = document.getElementById("btnAdicionarElemento");
+            btnAdicionarElemento.addEventListener("click", adicionarElemento);
+            function adicionarElemento(){
+            const novoElemento = document.getElementById("txtElemento").value;
+            novoElemento.txtContent = "novo elemento criado";
+
+            let elementoPai = document.getElementById("lufalufa");
+            elementoPai.appendChild(novoElemento);
+            }
+
+        var btnContar = document.getElementById("btnContar");
+        btnContar.addEventListener("click",contar);
+
+        function contar(){
+            let paragrafos = document.getElementsByClassName("classe_p");
+            alert("a pagina possui "+ paragrafos.length + " paragrafos.");
+        }
+        var btnRemover = document.getElementById("btnRemover");
+        btnRemover.addEventListener("click", removerClasse);
+
+        function removerClasse(){
+            let paragrafos = document.getElementsByClassName("classe_p");
+            while (paragrafos.length > 0){
+                alert(paragrafos[0].innerHTML + "::" + paragrafos.length);
+                paragrafos[0].className = "";
+            }
+            /*Como a classe é removida do elemento, ele não fará mais paere do array de elementos daquela classe.
+            logo, a cada elemento que possui classe removida, o numeor de elementos no array de paragrafos diminui.*/
+
+        }
+    </script>
+</body>
+</html>

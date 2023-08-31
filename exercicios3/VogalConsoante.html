@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <br>
+    <label for="">Digite uma caractere:</label>
+    <input type="text" id="caractere">
+    <button onclick="verificarVogalConsoante()">Verificar Caractere</button>
+    <h3 id="resultado"></h3>
+
+    
+    <script>
+
+        function verificarVogalConsoante() {
+
+            let caractere = document.getElementById("caractere").value;
+            if (caractere == "a" || caractere == "e" || caractere == "i" || caractere == "o" || caractere == "u") {
+                document.getElementById("resultado").innerHTML = "É uma vogal";
+            } else {
+                document.getElementById("resultado").innerHTML = "É uma consoante";
+            }
+        }
+</script>
+
+</body>
+
+</html>

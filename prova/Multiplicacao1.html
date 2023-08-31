@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+. Escreva um programa que receba três números digitados em campos de texto e
+ao clicar em um botão exiba a multiplicação dos números. 
+<br>
+<body>
+    <label>Numero 1:</label>
+    <input type="number" id="n1"><br>
+    <label>Numero 2:</label>
+    <input type="number" id="n2"><br>
+    <label>Numero 3:</label>
+    <input type="number" id="n3"><br>
+    <button onclick="calcularMultiplicacao()">Multiplicar</button>
+    <script>
+function calcularMultiplicacao() {
+     //aprseFloat - converte uma string para o tipo número de ponto flutuante
+            
+            let n1 = parseFloat(document.getElementById("n1").value);
+            let n2 = parseFloat(document.getElementById("n2").value);
+            let n3 = parseFloat(document.getElementById("n3").value);
+          
+
+         //let resultado=n1 * n2 * n3; 
+
+           let resultado = (n1*n2*n3);
+            
+           alert(resultado);
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="nome">Meu nome é Jão</h1>
+
+    <script>
+        alert("Jão");
+        console.log("Outro alerta");
+        document.getElementById("nome").innerHTML = "Meu nome não é Jão";
+    </script>
+
+    <h1 id="texto">Texto original</h1>
+    <button onclick="document.getElementById('texto').innerText='Texto modificado'">Alterar Texto</button>
+    <button onclick="document.getElementById('texto').innerText='Texto Original'">Alterar para Original</button>
+
+
+    <br>
+    <label for="">idade</label>
+    <input type="text" id="idade">
+    <button onclick="exibirResultado()">Verificar Idade</button>
+    <h3 id="resultado"></h3>
+
+    
+    <script>
+
+        function exibirResultado() {
+
+            let idade = document.getElementById("idade").value;
+            if (idade >= 18) {
+                document.getElementById("resultado").innerHTML = "Maior de Idade";
+            } else {
+                document.getElementById("resultado").innerText = "Menor de Idade";
+            }
+        }
+</script>
+
+</body>
+
+</html>
